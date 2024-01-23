@@ -1,4 +1,7 @@
 import confetti from "canvas-confetti";
+import Typed from "typed.js";
+
+// confetti
 const myCanvas = document.createElement("canvas");
 myCanvas.style.width = "100vw";
 myCanvas.style.height = "100vh";
@@ -18,4 +21,17 @@ confettiBtn.addEventListener("click", () => {
     particleCount: 100,
     spread: 200,
   });
+});
+
+// typedjs
+const typed = new Typed("#typedJs", {
+  strings: [
+    "I'm a student",
+    "at Bootcamp Devscale Indonesia",
+    "as a Fullstack Web JavaScript Developer.",
+  ],
+  typeSpeed: 35,
+  loop: true,
+  backDelay: 1000,
+  cursorChar: "_",
 });

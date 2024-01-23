@@ -457,6 +457,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 700;
 }
 
 input {
@@ -483,8 +484,8 @@ input:focus {
 button {
   border-radius: 9999px;
   border-width: 1px;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -642,16 +643,20 @@ button:hover {
   margin-left: -2rem;
 }
 
-.-mt-10 {
-  margin-top: -2.5rem;
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.-mt-5 {
+  margin-top: -1.25rem;
 }
 
 .mb-1 {
   margin-bottom: 0.25rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .flex {
@@ -789,9 +794,12 @@ button:hover {
   text-align: center;
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.text-\[60px\] {
+  font-size: 60px;
 }
 
 .text-sm {
@@ -842,8 +850,8 @@ button:hover {
     grid-column: span 2 / span 2;
   }
 
-  .lg\:col-span-4 {
-    grid-column: span 4 / span 4;
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .lg\:grid-cols-4 {
