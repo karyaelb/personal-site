@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karya Lingga</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="memojicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="memojicon.png">
+
+    <link href="css/global.css" rel="stylesheet">
+</head>
+
+<body onload="startTime()" class="bg-black">
+    <div class="flex flex-col justify-between">
+        <header class="flex justify-between p-6 item-center ">
+            <div class="brand">Karya's</div>
+            <nav class="flex gap-16 px-6 py-2 rounded-full border border-red-800">
+                <div class="hover:bg-rose-700 ... cursor-pointer rounded-full px-4">Home</div>
+                <div class="hover:bg-rose-700 ... cursor-pointer rounded-full px-4">About</div>
+                <div class="hover:bg-rose-700 ... cursor-pointer rounded-full px-4">Resume</div>
+            </nav>
+            <nav class="flex gap-16 px-6 py-2 rounded-full border border-red-800
+                hover:bg-rose-700 ... cursor-pointer"> <a href="mailto:an.karyalingga@gmail.com">Contact</a>
+            </nav>
+
+        </header>
+
+        <main class="grid grid-cols-1  lg:grid-cols-4 gap-8 max-w-5xl m-auto p-6 items-center justify-center">
+            <div class="card col-span-1 lg:col-span-2 flex flex-col justify-between ">
+                <!-- introduction card -->
+                <img src="/memoji.png" width="150px"
+                    class="flex -mt-10 -ml-8 -mb-2 hover:scale-110 transition duration-500">
+                <div class="flex gap-2 items-center mb-1 ">
+                    <h2>Halo, I am <br> Karya Lingga </h2>
+                    <div
+                        class="flex items-center py-2 px-4 rounded-full border border-emerald-300 gap-2  font-bold text-sm text-emerald-500">
+                        <div class="w-2 h-2 animate-pulse bg-green-500 rounded-full"></div>
+                        #OpentoWork
+                    </div>
+                </div>
+                <p>
+                    I am a student at Bootcamp Devscale Indonesia, as a
+                    Fullstack Web JavaScript Developer
+                </p>
+            </div>
+
+            <!-- twitter card -->
+            <a href="https://twitter.com/jangkaarr" target="_blank">
+                <div class="card bg-black flex items-center justify-between overflow-hidden">
+                    <img src="/twitter.jpg" width="150px"
+                        class="hover:scale-125 transition duration-500 cursor-pointer">
+                </div>
+            </a>
+
+            <!-- github card -->
+            <a href="https://github.com/karyaelb" target="_blank">
+                <div class="card flex items-center justify-between overflow-hidden">
+                    <img src="/github.png" width="150px" class="hover:scale-125 transition duration-500 cursor-pointer">
+                </div>
+            </a>
+
+            <!-- instagram card -->
+            <a href="https://instagram.com/karyaelb" target="_blank">
+                <div class="card bg-black flex items-center justify-between overflow-hidden">
+                    <img src="/instagram.png" width="150px"
+                        class="hover:scale-125 transition duration-500 cursor-pointer">
+                </div>
+            </a>
+
+
+            <!-- weather card -->
+            <div class="card items-center justify-between overflow-hidden">
+                <img src="/weather.png" width="150px" class="mb-4 hover:scale-125 transition duration-500 ">
+                <p class="text-center justify-center">Surabaya, East Java, Indonesia 61254</p>
+            </div>
+
+            <!-- digital clock -->
+            <div class="card col-span-1 lg:col-span-2 flex items-center justify-center ">
+                <div id="txt" class="text-8xl"></div>
+            </div>
+
+            <!-- confetti card -->
+            <div class="card col-span-1 lg:col-span-4 space-y-4 ">
+                <h2>Do you want to collab?</h2>
+                <p>Drop your email, thankyou!</p>
+                <input type="email" placeholder="Email address">
+                <button id="confettiBtn">Send</button>
+            </div>
+
+        </main>
+
+        <footer class="text-center p-20">Karya Lingga @2024</footer>
+    </div>
+
+    <script src="js/digitalclock.js"></script>◘
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
